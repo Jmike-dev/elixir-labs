@@ -27,4 +27,8 @@ defmodule ReviewAnalytics do
 %{id: 6, user: "Frank", rating: 1, comment: "Terrible experience.", date: ~D[2025-01-08]
 }
 ]  end
+
+def count_review do
+
+end
 end
