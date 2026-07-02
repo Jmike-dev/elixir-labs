@@ -12,7 +12,7 @@ defmodule ReviewAnalytics do
       :world
 
   """
-  def hello do
+  def get_reviews do
 [
 %{id: 1, user: "Alice", rating: 5, comment: "Amazing service!", date: ~D[2025-01-15]
 },
