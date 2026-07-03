@@ -69,6 +69,12 @@ def sort_by_rating (sort \\ :desc)do
 end
 
 
+def sort_by_date((sort \\ :desc)) do
+    get_reviews()|>Enum.sort_by(fn reviews -> reviews.date end , {sort,Date})
+
+
+end
+
 
 
 
