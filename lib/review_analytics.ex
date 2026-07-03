@@ -50,7 +50,7 @@ def lowest_rating do
 end
 
 def five_star_reviews do
-
+    get_reviews()|>Enum.filter(fn reviews -> reviews.rating == 5 end)
 end
 
 end
