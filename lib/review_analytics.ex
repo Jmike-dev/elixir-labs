@@ -28,6 +28,8 @@ defmodule ReviewAnalytics do
 }
 ]  end
 
+# part A basic functions
+
 def count_review do
   get_reviews() |> length()
 
@@ -49,6 +51,7 @@ def lowest_rating do
 
 end
 
+# part B filter functions
 def five_star_reviews do
     get_reviews()|>Enum.filter(fn reviews -> reviews.rating == 5 end)
 end
@@ -58,9 +61,14 @@ def filter_reviews(filter_rating) do
 
 end
 
-def sort_by_rating do
+# part C sort functions
+
+def sort_by_rating (sort \\ :desc)do
+  get_reviews()|>Enum.sort_by(fn reviews -> reviews.rating end , sort)
 
 end
+
+
 
 
 
