@@ -44,6 +44,8 @@ def highest_rating do
 end
 
 def lowest_rating do
+    get_reviews()|>Enum.map(fn review -> review.rating end)|>Enum.min()
+
 
 end
 
