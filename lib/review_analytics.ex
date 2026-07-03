@@ -53,4 +53,15 @@ def five_star_reviews do
     get_reviews()|>Enum.filter(fn reviews -> reviews.rating == 5 end)
 end
 
+def filter_reviews(filter_rating) do
+      get_reviews()|>Enum.filter(fn reviews -> reviews.rating == filter_rating end)
+
+end
+
+def sort_by_rating do
+
+end
+
+
+
 end
