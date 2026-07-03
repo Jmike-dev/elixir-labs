@@ -39,6 +39,7 @@ def average_rating do
 end
 
 def highest_rating do
+  get_reviews()|>Enum.map(fn review -> review.rating end)|>Enum.max()
 
 end
 
