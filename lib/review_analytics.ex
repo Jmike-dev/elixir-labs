@@ -34,7 +34,8 @@ def count_review do
 end
 
 def average_rating do
-
+  average = get_reviews() |> Enum.map(fn review -> review.rating end)
+  Enum.sum(average) / length(average)
 end
 
 def highest_rating do
