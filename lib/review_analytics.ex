@@ -29,6 +29,24 @@ defmodule ReviewAnalytics do
 ]  end
 
 def count_review do
+  get_reviews() |> length()
 
 end
+
+def average_rating do
+
+end
+
+def highest_rating do
+
+end
+
+def lowest_rating do
+
+end
+
+def five_star_reviews do
+
+end
+
 end
